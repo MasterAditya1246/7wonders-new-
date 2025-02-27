@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>7 Wonders of the World</title>
+    <style>
+        /* Elegant Dark Theme */
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            background: #1b1b32; /* Midnight Blue */
+            color: white;
+        }
+
+        h1 {
+            font-size: 42px;
+            margin: 30px 0;
+            text-transform: uppercase;
+            color: gold;
+            text-shadow: 2px 2px 5px rgba(255, 215, 0, 0.5);
+        }
+
+        /* Navigation Buttons */
+        .wonder {
+            margin: 10px;
+            padding: 12px 20px;
+            display: inline-block;
+            background: #ff9800; /* Warm Orange */
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-size: 18px;
+            transition: all 0.3s ease-in-out;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+        }
+        .wonder:hover {
+            background: #e65100;
+            transform: scale(1.1);
+            box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.4);
+        }
+
+        /* Wonders Sections */
+        .info {
+            margin: 50px auto;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.1);
+            color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+            max-width: 800px;
+            transition: all 0.3s ease-in-out;
+        }
+        .info:hover {
+            background: rgba(255, 255, 255, 0.2);
+        }
+        .info img {
+            width: 100%;
+            max-width: 600px;
+            border-radius: 10px;
+            border: 3px solid gold;
+        }
+
+        /* More Info Button */
+        .more-info {
+            display: inline-block;
+            margin-top: 10px;
+            background: #00897b; /* Teal */
+            color: white;
+            padding: 10px 15px;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: all 0.3s ease-in-out;
+        }
+        .more-info:hover {
+            background: #00695c;
+            transform: scale(1.1);
+        }
+
+        /* Back to Top Button */
+        #topBtn {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            display: none;
+            padding: 12px 18px;
+            font-size: 16px;
+            background: #b71c1c; /* Deep Red */
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 50px;
+            transition: all 0.3s ease-in-out;
+        }
+        #topBtn:hover {
+            background: #7f0000;
+            transform: scale(1.1);
+        }
+
+        footer {
+            margin-top: 50px;
+            padding: 10px;
+            background: rgba(0, 0, 0, 0.7);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>7 Wonders of the World</h1>
+
+    <!-- Navigation Buttons -->
+    <a href="#greatwall" class="wonder">Great Wall of China</a>
+    <a href="#petra" class="wonder">Petra, Jordan</a>
+    <a href="#redeemer" class="wonder">Christ the Redeemer, Brazil</a>
+    <a href="#machupicchu" class="wonder">Machu Picchu, Peru</a>
+    <a href="#chichen" class="wonder">Chichen Itza, Mexico</a>
+    <a href="#colosseum" class="wonder">Roman Colosseum, Italy</a>
+    <a href="#tajmahal" class="wonder">Taj Mahal, India</a>
+
+    <!-- Wonders Information -->
+    <div id="greatwall" class="info">
+        <h2>Great Wall of China</h2>
+        <img src="images/great_wall.jpg" alt="Great Wall of China">
+        <p>Stretching over 13,000 miles, the Great Wall is an ancient fortification.</p>
+        <a href="greatwall.html" class="more-info" target="_blank">More Info</a>
+    </div>
+
+    <div id="petra" class="info">
+        <h2>Petra, Jordan</h2>
+        <img src="images/petra.jpg" alt="Petra, Jordan">
+        <p>Petra is an ancient city famous for its rock-cut architecture.</p>
+        <a href="petra.html" class="more-info" target="_blank">More Info</a>
+    </div>
+
+    <div id="redeemer" class="info">
+        <h2>Christ the Redeemer, Brazil</h2>
+        <img src="images/redeemer.jpg" alt="Christ the Redeemer">
+        <p>A 98-ft statue of Jesus Christ in Rio de Janeiro.</p>
+        <a href="redeemer.html" class="more-info" target="_blank">More Info</a>
+    </div>
+
+    <div id="machupicchu" class="info">
+        <h2>Machu Picchu, Peru</h2>
+        <img src="images/machu_picchu.jpg" alt="Machu Picchu">
+        <p>Ancient Incan citadel set high in the Andes Mountains.</p>
+        <a href="machupicchu.html" class="more-info" target="_blank">More Info</a>
+    </div>
+
+    <div id="chichen" class="info">
+        <h2>Chichen Itza, Mexico</h2>
+        <img src="images/chichen_itza.jpg" alt="Chichen Itza">
+        <p>A large pre-Columbian archaeological site built by the Maya civilization.</p>
+        <a href="chichen.html" class="more-info" target="_blank">More Info</a>
+    </div>
+
+    <div id="colosseum" class="info">
+        <h2>Roman Colosseum, Italy</h2>
+        <img src="images/colosseum.jpg" alt="Colosseum">
+        <p>The Colosseum is an ancient amphitheater in Rome, known for gladiator battles.</p>
+        <a href="colosseum.html
+" class="more-info" target="_blank">More Info</a>
+    </div>
+
+    <div id="tajmahal" class="info">
+        <h2>Taj Mahal, India</h2>
+        <img src="images/taj_mahal.jpg" alt="Taj Mahal">
+        <p>The Taj Mahal is a white marble mausoleum built by Mughal emperor Shah Jahan.</p>
+        <a href="tajmahal.html" class="more-info" target="_blank">More Info</a>
+    </div>
+
+    <!-- Back to Top Button -->
+    <button id="topBtn">⬆</button>
+
+    <footer>
+        <p>© 2025 Wonders of the World | Designed by You</p>
+    </footer>
+
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener("click", function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute("href")).scrollIntoView({ behavior: "smooth" });
+            });
+        });
+
+        const topBtn = document.getElementById("topBtn");
+        window.addEventListener("scroll", () => {
+            topBtn.style.display = window.scrollY > 300 ? "block" : "none";
+        });
+
+        topBtn.addEventListener("click", () => {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+        });
+    </script>
+
+</body>
+</html>
