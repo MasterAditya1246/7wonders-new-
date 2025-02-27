@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roman Colosseum, Italy</title>
+    <style>
+        /* General reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background: linear-gradient(to right, #f4a300, #d84f19); /* Gold and brick-red tones representing Roman architecture */
+            color: #fff;
+            overflow-x: hidden;
+            transition: all 0.3s ease;
+        }
+
+        header {
+            text-align: center;
+            padding: 50px 0;
+            background: rgba(0, 0, 0, 0.6);
+        }
+
+        header h1 {
+            font-size: 3rem;
+            letter-spacing: 3px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .intro, .history, .facts {
+            background: rgba(0, 0, 0, 0.6);
+            padding: 40px;
+            margin: 20px 0;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .intro h2, .history h2, .facts h2 {
+            font-size: 2rem;
+            margin-bottom: 15px;
+        }
+
+        p {
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+        }
+
+        .image-gallery {
+            display: flex;
+            justify-content: space-between;
+            gap: 10px;
+        }
+
+        .image-gallery img {
+            width: 32%;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .image-gallery img:hover {
+            transform: scale(1.05);
+        }
+
+        footer {
+            background: rgba(0, 0, 0, 0.8);
+            text-align: center;
+            padding: 20px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        footer p {
+            font-size: 1rem;
+        }
+
+        /* Smooth scroll */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Media Queries for responsiveness */
+        @media (max-width: 768px) {
+            .image-gallery {
+                flex-direction: column;
+            }
+
+            .image-gallery img {
+                width: 100%;
+                margin-bottom: 10px;
+            }
+        }
+
+        /* Scroll-to-top button */
+        .scroll-to-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #d84f19;
+            color: #fff;
+            border: none;
+            border-radius: 50%;
+            padding: 10px 15px;
+            cursor: pointer;
+            font-size: 1.5rem;
+            display: none;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .scroll-to-top:hover {
+            background-color: #f4a300;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Roman Colosseum, Italy</h1>
+    </header>
+
+    <div class="container">
+        <section class="intro">
+            <h2>Introduction</h2>
+            <p>The Roman Colosseum, also known as the Flavian Amphitheatre, is one of the most iconic landmarks of ancient Rome and a symbol of the grandeur of the Roman Empire. Built in the 1st century AD, it was used for gladiatorial contests and public spectacles such as animal hunts, mock naval battles, and executions. The Colosseum could hold up to 80,000 spectators and was the largest amphitheater in the Roman world.</p>
+        </section>
+
+        <section class="history">
+            <h2>History</h2>
+            <p>Construction of the Colosseum began under Emperor Vespasian in 70 AD and was completed in 80 AD by his son Titus. The amphitheater was primarily used for entertainment purposes, with gladiatorial games and wild animal hunts being popular attractions. After the fall of the Roman Empire, the Colosseum suffered from neglect, earthquakes, and stone-looting, though much of it has been preserved. Today, the Colosseum stands as a symbol of Rome's ancient power and a major tourist attraction.</p>
+        </section>
+
+        <section class="facts">
+            <h2>Fun Facts</h2>
+            <ul>
+                <li>The Colosseum's construction was funded by the spoils of the Jewish War, including the treasures looted from Jerusalem in 70 AD.</li>
+                <li>It could hold up to 80,000 spectators and was the largest amphitheater of its time.</li>
+                <li>Gladiators were often slaves, criminals, or prisoners of war, but some volunteered for fame and prize money.</li>
+                <li>Many animals used in the Colosseum's spectacles, including lions, tigers, and elephants, were brought from Africa.</li>
+            </ul>
+        </section>
+
+        <section class="image-gallery">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/8/8f/Colosseum_in_Rome_-_Italy.jpg" alt="Roman Colosseum Exterior">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/4/47/Colosseum_in_Rome_-_Interior.jpg" alt="Roman Colosseum Interior">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/Colosseum_at_night.jpg" alt="Roman Colosseum at night">
+        </section>
+    </div>
+
+    <button class="scroll-to-top" onclick="scrollToTop()">↑</button>
+
+    <footer>
+        <p>&copy; 2025 Roman Colosseum, Italy. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        // Scroll to top button visibility
+        window.onscroll = function () {
+            var scrollButton = document.querySelector(".scroll-to-top");
+            if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+                scrollButton.style.display = "block";
+            } else {
+                scrollButton.style.display = "none";
+            }
+        };
+
+        // Scroll to top function
+        function scrollToTop() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+</body>
+
+</html>

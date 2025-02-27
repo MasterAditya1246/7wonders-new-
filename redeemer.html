@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Christ the Redeemer, Brazil</title>
+    <style>
+        /* General reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background: linear-gradient(to right, #00c6ff, #0072ff); /* Sky and ocean blue gradient */
+            color: #fff;
+            overflow-x: hidden;
+            transition: all 0.3s ease;
+        }
+
+        header {
+            text-align: center;
+            padding: 50px 0;
+            background: rgba(0, 0, 0, 0.5);
+        }
+
+        header h1 {
+            font-size: 3rem;
+            letter-spacing: 2px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .intro, .history, .facts {
+            background: rgba(0, 0, 0, 0.6);
+            padding: 40px;
+            margin: 20px 0;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .intro h2, .history h2, .facts h2 {
+            font-size: 2rem;
+            margin-bottom: 15px;
+        }
+
+        p {
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+        }
+
+        .image-gallery {
+            display: flex;
+            justify-content: space-between;
+            gap: 10px;
+        }
+
+        .image-gallery img {
+            width: 32%;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .image-gallery img:hover {
+            transform: scale(1.05);
+        }
+
+        footer {
+            background: rgba(0, 0, 0, 0.8);
+            text-align: center;
+            padding: 20px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        footer p {
+            font-size: 1rem;
+        }
+
+        /* Smooth scroll */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Media Queries for responsiveness */
+        @media (max-width: 768px) {
+            .image-gallery {
+                flex-direction: column;
+            }
+
+            .image-gallery img {
+                width: 100%;
+                margin-bottom: 10px;
+            }
+        }
+
+        /* Scroll-to-top button */
+        .scroll-to-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #0072ff;
+            color: #fff;
+            border: none;
+            border-radius: 50%;
+            padding: 10px 15px;
+            cursor: pointer;
+            font-size: 1.5rem;
+            display: none;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .scroll-to-top:hover {
+            background-color: #00c6ff;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Christ the Redeemer, Brazil</h1>
+    </header>
+
+    <div class="container">
+        <section class="intro">
+            <h2>Introduction</h2>
+            <p>Christ the Redeemer (Cristo Redentor) is a massive statue of Jesus Christ located in Rio de Janeiro, Brazil. Standing at 98 feet tall, it is one of the most famous landmarks in the world and an icon of Christianity. The statue overlooks the city from the peak of the Corcovado Mountain, offering breathtaking views of Rio and the surrounding bay.</p>
+        </section>
+
+        <section class="history">
+            <h2>History</h2>
+            <p>The statue was designed by Brazilian engineer Heitor da Silva Costa and created by French sculptor Paul Landowski. It was completed in 1931 after nine years of construction. Christ the Redeemer was constructed to symbolize peace and as a representation of Christianity in Brazil. It was inaugurated on October 12, 1931, and was later recognized as one of the New Seven Wonders of the World in 2007.</p>
+        </section>
+
+        <section class="facts">
+            <h2>Fun Facts</h2>
+            <ul>
+                <li>The statue weighs approximately 635 metric tons and is made of reinforced concrete and soapstone.</li>
+                <li>The arms of Christ are 92 feet wide, symbolizing a welcoming embrace to all people.</li>
+                <li>The statue was struck by lightning several times, leading to renovations and enhancements over the years.</li>
+                <li>It is one of the most visited tourist attractions in Brazil, with more than 2 million visitors each year.</li>
+            </ul>
+        </section>
+
+        <section class="image-gallery">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/e/e8/Christ_the_Redeemer_-_Rio_de_Janeiro_-_Brazil.jpg" alt="Christ the Redeemer">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Christ_the_Redeemer_and_Rio_from_Sugarloaf_Mountain.jpg" alt="Christ the Redeemer with Sugarloaf Mountain">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6f/Rio_de_Janeiro_%28Christ_the_Redeemer%29.jpg" alt="Christ the Redeemer at sunset">
+        </section>
+    </div>
+
+    <button class="scroll-to-top" onclick="scrollToTop()">↑</button>
+
+    <footer>
+        <p>&copy; 2025 Christ the Redeemer, Brazil. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        // Scroll to top button visibility
+        window.onscroll = function () {
+            var scrollButton = document.querySelector(".scroll-to-top");
+            if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+                scrollButton.style.display = "block";
+            } else {
+                scrollButton.style.display = "none";
+            }
+        };
+
+        // Scroll to top function
+        function scrollToTop() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Machu Picchu, Peru</title>
+    <style>
+        /* General reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background: linear-gradient(to right, #4caf50, #2e7d32); /* Green gradient representing the lush mountains */
+            color: #fff;
+            overflow-x: hidden;
+            transition: all 0.3s ease;
+        }
+
+        header {
+            text-align: center;
+            padding: 50px 0;
+            background: rgba(0, 0, 0, 0.5);
+        }
+
+        header h1 {
+            font-size: 3rem;
+            letter-spacing: 2px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .intro, .history, .facts {
+            background: rgba(0, 0, 0, 0.6);
+            padding: 40px;
+            margin: 20px 0;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .intro h2, .history h2, .facts h2 {
+            font-size: 2rem;
+            margin-bottom: 15px;
+        }
+
+        p {
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+        }
+
+        .image-gallery {
+            display: flex;
+            justify-content: space-between;
+            gap: 10px;
+        }
+
+        .image-gallery img {
+            width: 32%;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .image-gallery img:hover {
+            transform: scale(1.05);
+        }
+
+        footer {
+            background: rgba(0, 0, 0, 0.8);
+            text-align: center;
+            padding: 20px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        footer p {
+            font-size: 1rem;
+        }
+
+        /* Smooth scroll */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Media Queries for responsiveness */
+        @media (max-width: 768px) {
+            .image-gallery {
+                flex-direction: column;
+            }
+
+            .image-gallery img {
+                width: 100%;
+                margin-bottom: 10px;
+            }
+        }
+
+        /* Scroll-to-top button */
+        .scroll-to-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #2e7d32;
+            color: #fff;
+            border: none;
+            border-radius: 50%;
+            padding: 10px 15px;
+            cursor: pointer;
+            font-size: 1.5rem;
+            display: none;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .scroll-to-top:hover {
+            background-color: #4caf50;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Machu Picchu, Peru</h1>
+    </header>
+
+    <div class="container">
+        <section class="intro">
+            <h2>Introduction</h2>
+            <p>Machu Picchu is an ancient Incan city located in the Andes Mountains of Peru. It was built in the 15th century by the Inca emperor Pachacuti and served as a royal estate. Rediscovered in 1911 by American explorer Hiram Bingham, it is now one of the most iconic archaeological sites in the world and a UNESCO World Heritage Site.</p>
+        </section>
+
+        <section class="history">
+            <h2>History</h2>
+            <p>Machu Picchu was constructed by the Inca civilization around 1450, but it was abandoned in the early 16th century during the Spanish Conquest. The site remained largely unknown to the outside world until its rediscovery by Hiram Bingham in 1911. Despite its remote location, the city is a masterpiece of engineering, with its terraces, temples, and palaces built to harmonize with the natural environment.</p>
+        </section>
+
+        <section class="facts">
+            <h2>Fun Facts</h2>
+            <ul>
+                <li>The name “Machu Picchu” means “Old Peak” in Quechua, the language of the Inca.</li>
+                <li>The site was never found by the Spanish, which is why it remained hidden for centuries.</li>
+                <li>It’s estimated that Machu Picchu was home to about 1,000 people during its peak.</li>
+                <li>The site is located at an altitude of about 7,970 feet (2,430 meters) above sea level.</li>
+            </ul>
+        </section>
+
+        <section class="image-gallery">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/2/2e/Machu_Picchu%2C_Peru_%28unsplash%29.jpg" alt="Machu Picchu view">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/4/43/Machu_Picchu_-_view.jpg" alt="Machu Picchu with mountains">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/2/28/Machu_Picchu_-_Temple_of_the_Sun.jpg" alt="Temple of the Sun in Machu Picchu">
+        </section>
+    </div>
+
+    <button class="scroll-to-top" onclick="scrollToTop()">↑</button>
+
+    <footer>
+        <p>&copy; 2025 Machu Picchu, Peru. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        // Scroll to top button visibility
+        window.onscroll = function () {
+            var scrollButton = document.querySelector(".scroll-to-top");
+            if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+                scrollButton.style.display = "block";
+            } else {
+                scrollButton.style.display = "none";
+            }
+        };
+
+        // Scroll to top function
+        function scrollToTop() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+</body>
+
+</html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Machu Picchu, Peru</title>
+    <style>
+        /* General reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background: linear-gradient(to right, #4caf50, #2e7d32); /* Green gradient representing the lush mountains */
+            color: #fff;
+            overflow-x: hidden;
+            transition: all 0.3s ease;
+        }
+
+        header {
+            text-align: center;
+            padding: 50px 0;
+            background: rgba(0, 0, 0, 0.5);
+        }
+
+        header h1 {
+            font-size: 3rem;
+            letter-spacing: 2px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .intro, .history, .facts {
+            background: rgba(0, 0, 0, 0.6);
+            padding: 40px;
+            margin: 20px 0;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .intro h2, .history h2, .facts h2 {
+            font-size: 2rem;
+            margin-bottom: 15px;
+        }
+
+        p {
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+        }
+
+        .image-gallery {
+            display: flex;
+            justify-content: space-between;
+            gap: 10px;
+        }
+
+        .image-gallery img {
+            width: 32%;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .image-gallery img:hover {
+            transform: scale(1.05);
+        }
+
+        footer {
+            background: rgba(0, 0, 0, 0.8);
+            text-align: center;
+            padding: 20px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        footer p {
+            font-size: 1rem;
+        }
+
+        /* Smooth scroll */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Media Queries for responsiveness */
+        @media (max-width: 768px) {
+            .image-gallery {
+                flex-direction: column;
+            }
+
+            .image-gallery img {
+                width: 100%;
+                margin-bottom: 10px;
+            }
+        }
+
+        /* Scroll-to-top button */
+        .scroll-to-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #2e7d32;
+            color: #fff;
+            border: none;
+            border-radius: 50%;
+            padding: 10px 15px;
+            cursor: pointer;
+            font-size: 1.5rem;
+            display: none;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .scroll-to-top:hover {
+            background-color: #4caf50;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Machu Picchu, Peru</h1>
+    </header>
+
+    <div class="container">
+        <section class="intro">
+            <h2>Introduction</h2>
+            <p>Machu Picchu is an ancient Incan city located in the Andes Mountains of Peru. It was built in the 15th century by the Inca emperor Pachacuti and served as a royal estate. Rediscovered in 1911 by American explorer Hiram Bingham, it is now one of the most iconic archaeological sites in the world and a UNESCO World Heritage Site.</p>
+        </section>
+
+        <section class="history">
+            <h2>History</h2>
+            <p>Machu Picchu was constructed by the Inca civilization around 1450, but it was abandoned in the early 16th century during the Spanish Conquest. The site remained largely unknown to the outside world until its rediscovery by Hiram Bingham in 1911. Despite its remote location, the city is a masterpiece of engineering, with its terraces, temples, and palaces built to harmonize with the natural environment.</p>
+        </section>
+
+        <section class="facts">
+            <h2>Fun Facts</h2>
+            <ul>
+                <li>The name “Machu Picchu” means “Old Peak” in Quechua, the language of the Inca.</li>
+                <li>The site was never found by the Spanish, which is why it remained hidden for centuries.</li>
+                <li>It’s estimated that Machu Picchu was home to about 1,000 people during its peak.</li>
+                <li>The site is located at an altitude of about 7,970 feet (2,430 meters) above sea level.</li>
+            </ul>
+        </section>
+
+        <section class="image-gallery">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/2/2e/Machu_Picchu%2C_Peru_%28unsplash%29.jpg" alt="Machu Picchu view">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/4/43/Machu_Picchu_-_view.jpg" alt="Machu Picchu with mountains">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/2/28/Machu_Picchu_-_Temple_of_the_Sun.jpg" alt="Temple of the Sun in Machu Picchu">
+        </section>
+    </div>
+
+    <button class="scroll-to-top" onclick="scrollToTop()">↑</button>
+
+    <footer>
+        <p>&copy; 2025 Machu Picchu, Peru. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        // Scroll to top button visibility
+        window.onscroll = function () {
+            var scrollButton = document.querySelector(".scroll-to-top");
+            if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+                scrollButton.style.display = "block";
+            } else {
+                scrollButton.style.display = "none";
+            }
+        };
+
+        // Scroll to top function
+        function scrollToTop() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+</body>
+
+</html>
